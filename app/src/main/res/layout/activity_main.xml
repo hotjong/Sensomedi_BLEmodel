@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C9C9C9"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ListView
+                                android:id="@+id/bleDeviceList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                            </ListView>
+
+                            <ToggleButton
+                                android:id="@+id/toggleButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ToggleButton" />
+
+                            <Button
+                                android:id="@+id/scanButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Button" />
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foregroundGravity="center"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TableLayout
+                                    android:id="@+id/tableLayout"
+                                    android:layout_width="360dp"
+                                    android:layout_height="600dp"
+                                    android:layout_gravity="center"
+                                    android:background="#000000"
+                                    android:gravity="center"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/color_init_button">
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <View
+                                            android:id="@+id/view1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@color/color1"
+                                            android:clickable="true" />
+
+                                        <View
+                                            android:id="@+id/view2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@color/color2" />
+
+                                        <View
+                                            android:id="@+id/view3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="@color/color3" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <View
+                                            android:id="@+id/view4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#00E676" />
+
+                                        <View
+                                            android:id="@+id/view5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#2979FF"
+                                            android:clickable="true" />
+
+                                        <View
+                                            android:id="@+id/view6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#3D5AFE" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <View
+                                            android:id="@+id/view7"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#651FFF" />
+
+                                        <View
+                                            android:id="@+id/view8"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#D500F9" />
+
+                                        <View
+                                            android:id="@+id/view9"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#1DE9B6" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <View
+                                            android:id="@+id/view10"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#C6FF00" />
+
+                                        <View
+                                            android:id="@+id/view11"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#4157B7" />
+
+                                        <View
+                                            android:id="@+id/view12"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#00E676" />
+                                    </TableRow>
+
+                                    <TableRow
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <View
+                                            android:id="@+id/view13"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#829837" />
+
+                                        <View
+                                            android:id="@+id/view14"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#FF9100" />
+
+                                        <View
+                                            android:id="@+id/view15"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:background="#2196F3" />
+                                    </TableRow>
+                                </TableLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/logText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="textMultiLine|textImeMultiLine"
+                                android:text="Log"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>
